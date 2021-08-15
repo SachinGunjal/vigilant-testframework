@@ -1,0 +1,311 @@
+colleague:
+  collection:
+    email: dhpqa02colleague2@tools.boots
+    password: Welcome@123
+  delivery:
+    email: dhpqa02colleague@tools.boots
+    password: Welcome@123
+user:
+  email: jane.doe+1@test.co.uk
+  password: Boots@123
+  fullName: Jane Doe
+  secondaryemail: shripathi.balaji@boots.co.uk
+  secondarypassword: Boots@123
+  secondaryfullName: Shripathi Balaji
+  testemail: testuser.test@boots.co.uk
+  testpassword: Boots@123
+  staticemail: ibuprofenBest@hotmail.com
+  staticpassword: Welcome@123
+  controlleddrugs:
+    letterbox:
+      email: letterbox.controlleddrugs@boots.co.uk
+      password: Boots@123
+    signedFor:
+      email: signedfor.controlleddrugs@boots.co.uk
+      password: Boots@123
+    storeCollection:
+      email: controlleddrugs.collect@boots.co.uk
+      password: Boots@123
+  homedelivery:
+    self:
+      letterbox:
+        noconsent:
+          paid:
+            email: myselfmalepaid.letterboxnoconsents@boots.co.uk
+            password: Boots@123
+        consent:
+          email: myselfmale.letterbox@boots.co.uk
+          password: Boots@123
+          email1: Roxane.Sipes2687@boots.co.uk
+          password1: Boots@123
+          paid:
+            email: myselfmale.letterboxpaid@boots.co.uk
+            password: Boots@123
+      signedfor:
+        consent:
+          email: myselfmale.hdsignedforexempt@boots.co.uk
+          password: Boots@123
+          paid:
+            email: myselfmale.signedforpaid@boots.co.uk
+            password: Boots@123
+          female:
+            email: myselffemale.homedelivery@boots.co.uk
+            password: Boots@123
+      colleaguesearch:
+        sameaddress:
+          email: andrew.sameadd@boots.co.uk
+          password: Boots@123
+        differentaddress:
+          email: andrew.diffadd@boots.co.uk
+          password: Boots@123
+    someoneelse:
+      letterbox:
+        noconsent:
+          paid:
+            email: someoneelsefemalepaid.letterboxnoconsents@boots.co.uk
+            password: Boots'123
+        consent:
+          email: myselffemale.letterbox@boots.co.uk
+          password: Boots@123
+      signedfor:
+        consent:
+          male:
+            email: someoneelsemale.homedelivery@boots.co.uk
+            password: Boots@123
+  storecollection:
+    self:
+      consent:
+        male:
+          email: myself_male.scexempt@boots.co.uk
+          password: Boots@123
+          paid:
+            email: myselfmale.scpaid@boots.co.uk
+            password: Boots@123
+        female:
+          email: jane.doe_returning@boots.co.uk
+          password: Boots@123
+      colleaguesearch:
+        email: harvey.searchcollection@boots.co.uk
+        password: Boots@123
+    someoneelse:
+      consent:
+        male:
+          email: carerjohn.doe_returning@test.co.uk
+          password: Boots@123
+        female:
+          email: carerjane.doe_returning@test.co.uk
+          password: Boots@123
+        noorder:
+          male:
+            email: myselfmale.noorders@boots.co.uk
+            password: Boots@123
+          female:
+            email: myselffemale.noorders@boots.co.uk
+            password: Boots@123
+
+
+medicine:
+  name: Omeprazole
+  type: Gastro-resistant capsule
+  options: Omeprazole 20mg gastro-resistant capsules
+  frequency: 2 months
+
+dashboardbanner:
+  tpp:
+    email: gplinkeligible.customer@boots.com
+    password: Password01
+  emis:
+    email: gplink.eligible@emis.com
+    password: Password01
+  vision:
+    email: gplink.eligible@vision.com
+    password: Password01
+
+nogplinkbanner:
+  nowasupport:
+    email: gplink.noneligible@microtest.com
+    password: Password01
+  tpp:
+    email: gplink.noneligible@tpp.com
+    password: Password01
+  emis:
+    email: gplink.noneligible@emis.com
+    password: Password01
+
+gplinkpatient:
+  email: Delight.Devereuxx@boots.com
+  password: Password01
+
+gplinkinvalid:
+  email: veer.pal@boots.com
+  password: onetwothree33
+
+gplinknoteligiblerpx:
+  email: meihui.lo@boots.com
+  password: Password01
+
+gplinknoteligibleappointment:
+  email: Yaochuan.Yau@boots.com
+  password: Password01
+
+gplinknoteligiblerpxemis:
+  email: Joyce.farmeremis@boots.com
+  password: Password01
+
+gplinknoteligibleappointmentemis:
+  email: Michael.farmeremis@boots.com
+  password: Password01
+
+gplinknoteligiblerpxvision:
+  email: vision.Paisleyvision@boots.com
+  password: Password01
+
+gplinknoteligibleappointmentvision:
+  email: Pahwa.vision@boots.com
+  password: Password01
+
+gplinkvision:
+  email: jasontest@mailinator.com
+  password: Password123
+
+gplinkemis:
+  email: james.sowteremis@boots.com
+
+gplinkgp:
+  tppnonblacklisted: Oakworth Medical Practice
+  emisnonblacklisted: Walderslade Surgery
+  visionnonblacklisted: Fig Tree Medical Practice
+  tppblacklisted: Covent Garden Medical Centre
+  notsupported: Sai Medical Centre
+  tppnotqualified: Eastleigh Ooh Service
+  emisnotqualified: North Wingfield Medical Centre
+
+gplinkpatientnoappointment:
+  email: Ghazaala.azamaliii@boots.com
+  password: Password01
+
+gplinkchangemedicalcondition:
+  email: juu.pai@boots.com
+  password: Password01
+
+gplinkControlledDrugs:
+  letterbox:
+    email: laura.george@boots.co.uk
+    password: Password01
+  storeCollection:
+    email: mark.swifttt@boots.co.uk
+    password: Password01
+
+gplinkstorecollectionfemale:
+  email: Xiu.Lioo@boots.com
+  password: Password01
+
+regularDPICustomer:
+  email: jane.doe+1@test.co.uk
+  password: Boots@123
+
+gplinkControlledDrugsDontOrder:
+  email: anna.smith@boots.co.uk
+  password: pASSWORD01
+
+gplinkStoreCollectionAsLastOrder:
+  email: zakbuh@mailpoof.com
+  password: Password01
+
+gplinkColumbus:
+  storeCollection:
+    email: kitty.pate@boots.co.uk
+    password: Password01
+
+hdletterboxuser:
+  email: MyselfMale.letterbox@boots.com
+  password: Boots@123
+
+hdselfmaleuser:
+  email: Homedelivery.male@boots.co.uk
+  password: Boots@123
+
+tppfridgelinehomedeliveryuser:
+  email: yimin.fangerr@boots.com
+  password: Password01
+
+tppfridgelinestorecollectionuser:
+  email: NuMan.Teklemariann@boots.com
+  password: Password01
+
+storecollectionmaleuser:
+  email: storecollection@boots.com
+  password: Boots@123
+
+regularnonenglanduser:
+  email: john.christian@boots.co.uk
+  password: Password01
+
+regularreorderuser:
+  email: christina.gui@boots.co.uk
+  password: Password01
+
+regulargpnoemailuser:
+  email: timtyler@boots.co.uk
+  password: Password01
+
+regularhomedeliveryaslastorder:
+  email: ddromey@boots.co.uk
+  password: Password01
+
+regularhomedeliveryaslastordernoemail:
+  email: lucy@boots.co.uk
+  password: Password01
+
+regularnonenglandhomedeliveryaslastorder:
+  email: annakin@boots.co.uk
+  password: Password01
+
+reorderactivationhomedelivery:
+  email: anomar.rad@boots.co.uk
+  password: Password01
+
+purgesupport:
+  user1:
+    email: elaine.forbes@boots.co.uk
+    password: Password01
+  user2:
+    email: digraph1618@gmail.com
+  user3:
+    email: Miryam.Meir@boots.com
+  user4:
+    email: hall.markesky@bootstest.com
+  user5:
+    email: Pavitar.Naran@test.com
+  user6:
+    email: Afnaan.Akinyemi@test.com
+  user7:
+    email: Mohanbir.Naganathan@test.com
+  user8:
+    email: fakih.assemi@boots.com
+  user9:
+    email: Yehosef.lewis@boots.com
+  user10:
+    email: Gemarya.levy@boots.com
+  user11:
+    email: Ghazaala.azamaliii@boots.com
+  user12:
+    email: Gorsedd.Erwinn@boots.com
+  user13:
+    email: Shantashil.Pavii@boots.com
+  user14:
+    email: liv.nathwanii@boots.com
+  user15:
+    email: Noor.Sanghaa@boots.com
+  user16:
+    email: Akalsimar.Sandhuu@boots.com
+  user17:
+    email: Archanaa.Sangita@boots.com
+  user18:
+    email: Joyce.farmeremis@boots.com
+  user19:
+    email: Julie.kempemis@boots.com
+  user20:
+    email: Julie.kempemis@boots.com
+  user21:
+    email: vision.Paisleyvision@boots.com

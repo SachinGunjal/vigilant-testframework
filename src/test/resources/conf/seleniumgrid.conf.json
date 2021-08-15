@@ -1,0 +1,22 @@
+{
+  "capabilities": {
+    "build": "seleniumgrid",
+    "name": "grid_test"
+  },
+  "configuration": {
+    "mode": "SELENIUMGRID"
+  },
+  "environments": {
+    "windows_10_chrome": {
+      "browser": "chrome",
+      "browserVersion": "80.0"
+    },
+    "windows_10_firefox": {
+      "browser": "firefox",
+      "browserVersion": "ANY"
+    },
+    "windows_10_edge": {
+      "browser": "edge"
+    }
+  }
+}
