@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Primary" parallel="true">
+    <test name="windows_10_chrome">
+        <!--        This can be moved to Saucelabs or Browserstack, config and environment can be changed accordingly -->
+        <parameter name="config" value="local.conf.json"/>
+        <parameter name="environment" value="chrome"/>
+        <classes>
+            <class name="com.qualitest.TestRunner"/>
+        </classes>
+    </test>
+</suite>

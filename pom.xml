@@ -13,8 +13,20 @@
         <surefire_version>3.0.0-M4</surefire_version>
         <allure_version>2.10.0</allure_version>
         <cucumber_version>5.7.0</cucumber_version>
+        <allure_version>2.10.0</allure_version>
+        <webdriver.manager.version>4.4.3</webdriver.manager.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.8.1</version>
+        </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
@@ -29,6 +41,30 @@
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Allure reporter -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber4-jvm</artifactId>
+            <version>${allure_version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdriver.manager.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.8.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.2.8.RELEASE</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -46,7 +82,7 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
-            <!-- generate report-->
+            <!-- generate com.qualitest.report-->
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
@@ -67,5 +103,50 @@
             </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>local</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>config/local-config.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                            <systemProperties>
+                                <property>
+                                    <!--This is parallel thread count, has set to 1 in local but can be set to more if needed -->
+                                    <name>dataproviderthreadcount</name>
+                                    <value>1</value>
+                                </property>
+                                <property>
+                                    <name>env</name>
+                                    <value>local</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.features</name>
+                                    <value>src/test/resources/features/</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.glue</name>
+                                    <value>com.qualitest</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.plugin</name>
+                                    <value>json:target/cucumber-com.qualitest.report.json</value>
+                                </property>
+                                <property>
+                                    <name>cucumber.filter.tags</name>
+                                    <value>@debug and not @pending</value>
+                                </property>
+                            </systemProperties>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
 </project>

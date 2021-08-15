@@ -1,0 +1,54 @@
+{
+  "capabilities": {
+    "testobject_api_key": "Add API Key",
+    "testobject_suite_name": "Qualitest Sample Test",
+    "testobject_app_id": 1,
+    "w3c": false,
+    "idleTimeout": 300,
+    "newCommandTimeout": 300
+  },
+  "configuration": {
+    "mode": "SAUCELABS",
+    "SAUCE_USERNAME": "Qualitest",
+    "SAUCE_ACCESS_KEY": "Add Access Key",
+    "RDC_SAUCE_CONNECT_API_KEY": "A6F62D3EAE744F9E97CD7CD5992AFED2"
+  },
+  "environments": {
+    "osx_catalina_safari": {
+      "deviceType": "desktop",
+      "browser": "safari",
+      "platform": "macOS 10.15",
+      "screenResolution": "1920x1440",
+      "name": "Test: DPI UI macOS Catalina Safari",
+      "seleniumVersion": "3.4.0"
+    },
+    "windows_10_chrome": {
+      "deviceType": "desktop",
+      "browser": "chrome",
+      "platform": "windows 10",
+      "screenResolution": "1920x1080",
+      "name": "Test: DPI UI windows 10 chrome",
+      "seleniumVersion": "3.141.59",
+      "extendedDebugging": true
+    },
+    "windows_10_edge": {
+      "deviceType": "desktop",
+      "browser": "MicrosoftEdge",
+      "platform": "windows 10",
+      "screenResolution": "1920x1080",
+      "name": "Test: DPI UI windows 10 edge",
+      "seleniumVersion": "3.141.59"
+    },
+    "android_11_chrome": {
+      "deviceType": "mobile",
+      "browser": "chrome",
+      "phoneOnly": true,
+      "platformName": "Android",
+      "platformVersion": 11,
+      "automationName": "UiAutomator2",
+      "deviceName": ".*",
+      "name": "Test: DPI chrome android 11",
+      "appiumVersion": "1.18.1"
+    }
+  }
+}

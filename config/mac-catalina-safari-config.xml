@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Primary">
+    <test name="osx_catalina_safari">
+        <!--        We can add configuartion with Saucelabs or Browserstack and run scripts on different devices daily in parallel-->
+        <!--        <parameter name="config" value="saucelabs.conf.json"/>-->
+        <!--        <parameter name="environment" value="osx_catalina_safari"/>-->
+        <classes>
+            <class name="com.qualitest.TestRunner"/>
+        </classes>
+    </test>
+</suite>
