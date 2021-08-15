@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,11 +16,15 @@ public class BasePage {
 
     public static WebDriver driver;
 
+    @Value("${baseurl}")
+    protected String baseURL;
+
     public void initiateDriver(String browserName) throws Exception {
         switch (browserName) {
             case "Chrome":
                 WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
+                driver.get(baseURL);
                 break;
             case "Firefox":
                 WebDriverManager.firefoxdriver().setup();
